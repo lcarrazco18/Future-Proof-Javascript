@@ -207,3 +207,10 @@
 // // then print one of the schools name
 // console.log(student.education[1].name)
 
+// Functions
+
+var usersName = function (name) {
+    console.log('this user\'s name is ' + name)
+}
+
+usersName('Luis')
