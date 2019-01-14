@@ -208,9 +208,18 @@
 // console.log(student.education[1].name)
 
 // Functions
+// lastName('Carrazco')
+// var usersName = function (name) {
+//     console.log('this user\'s name is ' + name)
+// }
+// usersName('Luis')
 
-var usersName = function (name) {
-    console.log('this user\'s name is ' + name)
+// function lastName(last) {
+//     console.log('this user\'s last name is ' + last)
+// }
+
+var add = function (a, b){
+    return a + b
 }
+var c = add(2,2)
 
-usersName('Luis')
