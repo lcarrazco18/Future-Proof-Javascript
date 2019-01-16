@@ -225,13 +225,45 @@
 
 // console.log(c)
 
-var grades = function(name, lastName, grade){
-    return {
-        name: name,
-        lastName: lastName,
-        grade: grade
-    }
-}
+// var grades = function(name, lastName, grade){
+//     return {
+//         name: name,
+//         lastName: lastName,
+//         grade: grade
+//     }
+// }
 
-var luis = grades('Luis', 'Carrazco', 91)
-console.log(luis)
+// var luis = grades('Luis', 'Carrazco', 91)
+// var lidia = grades('Lidia', 'Cabral', 35)
+// var jona = grades('jona', 'Carbajal', 59)
+
+// console.log(luis)
+// console.log(lidia)
+// console.log(jona)
+
+// var grades = function(name, lastName, grade){
+//     var name = name.toUpperCase()
+//     var lastName = lastName.toLowerCase()
+
+//     return {
+//         name: name,
+//         lastName: lastName,
+//         grade: grade
+//     }
+// }
+
+// var luis = grades('Luis', 'Carrazco', 91)
+// console.log(luis)
+
+//Function Excercise =====================================================
+
+// Declare a variable with a function that prints your name
+
+
+
+// Declare a function that takes 2 arguments then multiplies them and return the answer
+
+
+// then create a function that takes the last function you created and divides the result by 2 and then returns the answer.
+
+
