@@ -218,8 +218,20 @@
 //     console.log('this user\'s last name is ' + last)
 // }
 
-var add = function (a, b){
-    return a + b
-}
-var c = add(2,2)
+// var add = function (a, b){
+//     return a + b
+// }
+// var c = add(2,2)
 
+// console.log(c)
+
+var grades = function(name, lastName, grade){
+    return {
+        name: name,
+        lastName: lastName,
+        grade: grade
+    }
+}
+
+var luis = grades('Luis', 'Carrazco', 91)
+console.log(luis)
