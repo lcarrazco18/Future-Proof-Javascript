@@ -258,12 +258,19 @@
 //Function Excercise =====================================================
 
 // Declare a variable with a function that prints your name
-
-
+var username = function(name) {
+    return name
+}
+console.log(username("Juanito"))
 
 // Declare a function that takes 2 arguments then multiplies them and return the answer
-
+var multiplies = function(a, b) {
+    return a * b
+}
+console.log(multiplies(20, 5))
 
 // then create a function that takes the last function you created and divides the result by 2 and then returns the answer.
-
-
+var divides = function(a, b) {
+    return a + b / 2
+}
+console.log(divides(multiplies(20,5), multiplies(20,5)))
