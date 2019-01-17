@@ -304,11 +304,28 @@
 //     console.log('sorry your are too young')
 // }
 
-var user = "Peter";
-if (user == "Joe"){
-    console.log('welcome')
-} else if(user == "Peter") {
-    console.log('welcome peter')
-}else{
-    console.log('you dont work here')
-}
+// var user = "Peter";
+// if (user == "Joe"){
+//     console.log('welcome')
+// } else if(user == "Peter") {
+//     console.log('welcome peter')
+// }else{
+//     console.log('you dont work here')
+// }
+
+//Switch Statements
+// userLikes = 1000
+// switch(userLikes) {
+//     case 20:
+//       console.log('Hi Nancy!')
+//       break;
+//     case 50:
+//       console.log('Hi Brandon!')
+//       break;
+//     case 1000:
+//       console.log('Hi Luis!')
+//       break;
+//     default:
+//       console.log('Hi Joe!')
+//   }
+
