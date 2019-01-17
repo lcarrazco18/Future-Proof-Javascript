@@ -257,20 +257,58 @@
 
 //Function Excercise =====================================================
 
-// Declare a variable with a function that prints your name
-var username = function(name) {
-    return name
-}
-console.log(username("Juanito"))
+// // Declare a variable with a function that prints your name
+// var username = function(name) {
+//     return name
+// }
+// console.log(username("Juanito"))
 
-// Declare a function that takes 2 arguments then multiplies them and return the answer
-var multiplies = function(a, b) {
-    return a * b
-}
-console.log(multiplies(20, 5))
+// // Declare a function that takes 2 arguments then multiplies them and return the answer
+// var multiplies = function(a, b) {
+//     return a * b
+// }
+// console.log(multiplies(20, 5))
 
-// then create a function that takes the last function you created and divides the result by 2 and then returns the answer.
-var divides = function(a, b) {
-    return a + b / 2
+// // then create a function that takes the last function you created and divides the result by 2 and then returns the answer.
+// var divides = function(a, b) {
+//     return a + b / 2
+// }
+// console.log(divides(multiplies(20,5), multiplies(20,5)))
+
+
+// var user1 = {
+//     name: 'James',
+//     age: 30,
+//     likes: 2
+// }
+
+// var user2 = {
+//     name: 'Stephanie',
+//     age: 17,
+//     likes: 13
+// }
+
+// var user3 = {
+//     name: 'Jimmy',
+//     age: 25,
+//     likes: 13
+// }
+
+//age must be 18 and over to buy
+
+// if (user2.age >= 18) {
+//     console.log('you can buy')
+// } else if(user2.age == 17) {
+//     console.log('next year buddy')
+// } else {
+//     console.log('sorry your are too young')
+// }
+
+var user = "Peter";
+if (user == "Joe"){
+    console.log('welcome')
+} else if(user == "Peter") {
+    console.log('welcome peter')
+}else{
+    console.log('you dont work here')
 }
-console.log(divides(multiplies(20,5), multiplies(20,5)))
