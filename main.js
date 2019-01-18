@@ -329,3 +329,68 @@
 //       console.log('Hi Joe!')
 //   }
 
+// For Loops
+// var names = ["Luis", "Charly", "Stephanie", "Peter"]
+// for (i=0; i < 4; i++) {
+//     console.log('------------------------');
+//     console.log('RUNNING THE CODE AGAIN');
+//     if(i == 3){
+//     console.log('this is the end');
+//     } else{
+//         console.log(names[i]);
+//     }
+// }
+
+// While Loops
+
+// var cars = ["Honda", "BMW", "Benz"]
+// var i = 0;
+
+// // while loop
+// while (i < cars.length) {
+//     console.log(cars[i])
+//     i++
+// }
+
+// Do while loops
+
+// var cars = ["Honda", "BMW", "Benz"]
+// var i = 0;
+
+// Do / while loop
+// do {
+//    console.log(i)
+//    i++ 
+// }
+// while (i < 21)
+
+// For... in loop
+// var cars = [
+//     {name: "luis"}, {name: "luisa"}, {name: "saul"}, {name: "kevin"},  
+// ]
+// var i = 0;
+// //For... in loop
+// for (i in cars) {
+//     console.log(cars[i].name)
+// }
+// For... of loop
+// var cars = [
+//     {name: "luis"}, {name: "luisa"}, {name: "saul"}, {name: "kevin"},  
+// ]
+// var i = 0;
+
+// //For... of loop
+// for (i of cars) {
+//     console.log(i.name)
+// }
+
+// Loops Exercises
+
+// Print your name 3 times in a loop
+
+
+// Create an array named brands with 4 of your favorite name brands then choose whatever loop u like to print all 4 brands
+
+
+
+// Create an array with objects inside that contain information of each brand it must have name, product and a price inside. then print a sentence that says "(brandname)'s (product) cost (price)"
