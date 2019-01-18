@@ -329,6 +329,7 @@
 //       console.log('Hi Joe!')
 //   }
 
+
 // For Loops
 // var names = ["Luis", "Charly", "Stephanie", "Peter"]
 // for (i=0; i < 4; i++) {
@@ -387,10 +388,46 @@
 // Loops Exercises
 
 // Print your name 3 times in a loop
-
+// var name = ["Luis Carrazco"]
+// for (i=0; i < 3; i++) {
+//     console.log(name);
+//     console.log('-------------------')
+// }
 
 // Create an array named brands with 4 of your favorite name brands then choose whatever loop u like to print all 4 brands
+// var brands = ["Nike", "Nautica", "Puma", "Supreme"]
 
+// for (i of brands) {
+//     console.log(i)
+// }
 
+// var brands = ["Nike", "Nautica", "Puma", "Supreme"]
+
+// var i = 0
+// while (i < brands.length) {
+//     console.log(brands[i])
+//     i++
+// }
 
 // Create an array with objects inside that contain information of each brand it must have name, product and a price inside. then print a sentence that says "(brandname)'s (product) cost (price)"
+
+// var brandObjects = [
+// {
+//     name: 'Nike',
+//     product: 'shoes',
+//     price: 80
+// },
+// {
+//     name: 'Nautica',
+//     product: 'shirt',
+//     price: 75
+// },
+// {
+//     name: 'Puma',
+//     product: 'hoodie',
+//     price: 120
+// }
+// ]
+// for (brand of brandObjects) {
+//     console.log(brand.name + "'s " + brand.product + " cost " + brand.price + " dollars")
+// }
