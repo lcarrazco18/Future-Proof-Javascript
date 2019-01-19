@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,10 +9,28 @@
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     <script src="main.js"></script>
 </head>
+
 <body>
-    <h1>Future-Proof Javascript</h1>
-    
+    <p class="firstp">Hey my first paragraph im going to manipulate with javascript.</p>
+
+    <p>Hello</p>
+
+    <p>SWag</p>
 
 
+    <script>
+        //selector
+        var p = document.querySelectorAll('p')
+        console.log(p[1])
+        //manipulate
+        var i = 0;
+        while (i < p.length) {
+            p[i].style.background = 'red'
+            p[i].style.color = 'white'
+            i++
+        }
+    </script>
+    <script src="main.js"></script>
 </body>
+
 </html>
