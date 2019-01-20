@@ -24,7 +24,18 @@
         </li>
     </ul>
 
+    <button class="myBtn">myBtn</button>
+
+
     <script>
+        var myBtn = document.querySelector('.myBtn')
+        myBtn.onclick = function () {
+            testing()
+        }
+        function testing() {
+            console.log('Testing Booooooiiii!')
+        }
+
         // //selector
         // var p = document.querySelectorAll('p')
         // console.log(p[1])
@@ -35,10 +46,10 @@
         //     p[i].style.color = 'white'
         //     i++
         // }
-        var btn = document.createElement("div");
-        var t = document.createTextNode("This is a div");
-        btn.appendChild(t);
-        document.body.appendChild(btn);
+        // var btn = document.createElement("div");
+        // var t = document.createTextNode("This is a div");
+        // btn.appendChild(t);
+        // document.body.appendChild(btn);
     </script>
     <script src="main.js"></script>
 </body>
