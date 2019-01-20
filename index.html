@@ -15,20 +15,30 @@
 
     <p>Hello</p>
 
-    <p>SWag</p>
+    <p>Swag</p>
 
+    <button>Click Me</button>
+    <ul>
+        <li>
+            <span>icon</span>
+        </li>
+    </ul>
 
     <script>
-        //selector
-        var p = document.querySelectorAll('p')
-        console.log(p[1])
-        //manipulate
-        var i = 0;
-        while (i < p.length) {
-            p[i].style.background = 'red'
-            p[i].style.color = 'white'
-            i++
-        }
+        // //selector
+        // var p = document.querySelectorAll('p')
+        // console.log(p[1])
+        // //manipulate
+        // var i = 0;
+        // while (i < p.length) {
+        //     p[i].style.background = 'red'
+        //     p[i].style.color = 'white'
+        //     i++
+        // }
+        var btn = document.createElement("div");
+        var t = document.createTextNode("This is a div");
+        btn.appendChild(t);
+        document.body.appendChild(btn);
     </script>
     <script src="main.js"></script>
 </body>
