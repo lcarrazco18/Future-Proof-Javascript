@@ -432,21 +432,3 @@
 //     console.log(brand.name + "'s " + brand.product + " cost " + brand.price + " dollars")
 // }
 
-
-// Notification Tutorial Start
-
-// click album
-
-
-// show user he selected an album so we add a class selected to the album div
-
-
-// create an array and then add the album title we selected to the array
-
-
-// find out the total of albums selected 
-
-
-// save button is clicked then when its clicked show notification with saved items total 
-
-
