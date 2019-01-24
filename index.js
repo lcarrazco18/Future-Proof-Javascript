@@ -1,4 +1,3 @@
-
 // Notification Tutorial Start
 var notify = document.querySelector('.notify')
 var albums = document.querySelectorAll('.album')
@@ -8,12 +7,21 @@ var savBtn = document.querySelector('.button')
 var albumsSelected = []
 var i = 0
 
-while(i < albums.length) {
-    albums[i].onclick = function(e) {
+while (i < albums.length) {
+    albums[i].onclick = function (e) {
         var albumTitle = this.querySelector('.title').textContent
-        console.log(albumTitle)
+        if (this.classList.contains('selected') !== true) {
+            this.classList.add('selected')
+            albumsSelected.push(albumTitle)
+        } else {
+            this.classList.remove('selected')
+            albumsSelected = albumsSelected.filter(function(item) {
+                return item !== albumTitle
+            })
+        }
+        console.log(albumsSelected)
+
     }
-    console.log(i)
     i++
 }
 
@@ -31,6 +39,4 @@ while(i < albums.length) {
 // find out the total of albums selected 
 
 
-// save button is clicked then when its clicked show notification with saved items total 
-
-
+// save button is clicked then when its clicked show notification with saved items total
