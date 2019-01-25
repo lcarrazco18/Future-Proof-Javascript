@@ -2,7 +2,7 @@
 var notify = document.querySelector('.notify')
 var albums = document.querySelectorAll('.album')
 var itemsTotal = document.querySelector('.items-total')
-var savBtn = document.querySelector('.button')
+var saveBtn = document.querySelector('.button')
 
 var albumsSelected = []
 var i = 0
@@ -15,7 +15,7 @@ while (i < albums.length) {
             albumsSelected.push(albumTitle)
         } else {
             this.classList.remove('selected')
-            albumsSelected = albumsSelected.filter(function(item) {
+            albumsSelected = albumsSelected.filter(function (item) {
                 return item !== albumTitle
             })
         }
@@ -25,7 +25,15 @@ while (i < albums.length) {
     i++
 }
 
+saveBtn.onclick = function () {
+    itemsTotal.textContent = albumsSelected.length + ' items saved'
+    notify.classList.add('active')
 
+    setTimeout(function () {
+        notify.classList.remove('active')
+    }, 2000)
+    console.log('saved')
+}
 
 // click album
 
