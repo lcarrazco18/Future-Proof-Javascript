@@ -432,3 +432,31 @@
 //     console.log(brand.name + "'s " + brand.product + " cost " + brand.price + " dollars")
 // }
 
+var john = {
+    fullName = 'John Smith',
+    bills = [124, 48, 268, 180, 42],
+    calcTips: function() {
+        this.tips = [],
+        this.finalValues = [],
+
+        for (var i = 0; i < this.bills.length, i++) 
+        {
+            // Determine percentage of tipping based on tipping rules
+            var percentage;
+            var bill = this.bills[i];
+
+            if (bill < 50) {
+                percentage = .2;
+            } else (bill >= 50 && bill < 200) {
+                percentage = .15;
+            } else {
+                percentage = .1;
+            }
+
+            
+            // Add results to the corresponding arrays
+
+            this.bills[i] = bill * percentage
+        }
+    }
+}
