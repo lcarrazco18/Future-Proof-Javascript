@@ -447,7 +447,7 @@ var john = {
 
             if (bill < 50) {
                 percentage = .2;
-            } else (bill >= 50 && bill < 200) {
+            } else if (bill >= 50 && bill < 200) {
                 percentage = .15;
             } else {
                 percentage = .1;
@@ -456,7 +456,11 @@ var john = {
             
             // Add results to the corresponding arrays
 
-            this.bills[i] = bill * percentage
+            this.bills[i] = bill * percentage;
+            this.finalValues[i] = bill + bill * percentage;
         }
     }
 }
+
+john.calcTips();
+console.log(john);
