@@ -435,32 +435,64 @@
 var john = {
     fullName = 'John Smith',
     bills = [124, 48, 268, 180, 42],
-    calcTips: function() {
+    calcTips: function () {
         this.tips = [],
-        this.finalValues = [],
+            this.finalValues = [],
 
-        for (var i = 0; i < this.bills.length, i++) 
-        {
-            // Determine percentage of tipping based on tipping rules
-            var percentage;
-            var bill = this.bills[i];
+            for (var i = 0; i < this.bills.length, i++) {
+                // Determine percentage of tipping based on tipping rules
+                var percentage;
+                var bill = this.bills[i];
 
-            if (bill < 50) {
-                percentage = .2;
-            } else if (bill >= 50 && bill < 200) {
-                percentage = .15;
-            } else {
-                percentage = .1;
+                if (bill < 50) {
+                    percentage = .2;
+                } else if (bill >= 50 && bill < 200) {
+                    percentage = .15;
+                } else {
+                    percentage = .1;
+                }
+
+
+                // Add results to the corresponding arrays
+
+                this.bills[i] = bill * percentage;
+                this.finalValues[i] = bill + bill * percentage;
             }
-
-            
-            // Add results to the corresponding arrays
-
-            this.bills[i] = bill * percentage;
-            this.finalValues[i] = bill + bill * percentage;
-        }
     }
 }
 
+
+var mark = {
+    fullName = 'Mark Miller',
+    bills = [77, 475, 110, 45],
+    calcTips: function () {
+        this.tips = [],
+            this.finalValues = [],
+
+            for (var i = 0; i < this.bills.length, i++) {
+                // Determine percentage of tipping based on tipping rules
+                var percentage;
+                var bill = this.bills[i];
+
+                if (bill < 100) {
+                    percentage = .2;
+                } else if (bill >= 100 && bill < 300) {
+                    percentage = .10;
+                } else {
+                    percentage = .25;
+                }
+
+
+                // Add results to the corresponding arrays
+
+                this.bills[i] = bill * percentage;
+                this.finalValues[i] = bill + bill * percentage;
+            }
+    }
+}
+
+
 john.calcTips();
-console.log(john);
+mark.calcTips();
+console.log(john, mark);
+
